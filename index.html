@@ -7,24 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&display=swap"
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/90502dea97.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/style.css">
-    <title>Document</title>
+    <title>Portfolio</title>
 </head>
 <body>
 <div class="container" data-container>
     <header class="header" data-header>
-        <div class="header-box-title" data-header-box>
+        <div class="header-box" data-header-box>
             <h1 class="header-title">Rafał Matraś</h1>
-            <p class="header-text">Junior FullStack Developer</p>
             <div class="box-icon">
                 <a href="https://github.com/Rafal-Matras" target="_blank">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://linkedin.com/in/rafałmatraś/" target="_blank">
+                <a href="https://www.linkedin.com/in/rafalmatras/" target="_blank">
                     <i class="fab fa-linkedin"></i>
                 </a>
                 <a href="mailto:rafalmatras@gmail.com" target="_blank">
@@ -40,12 +39,27 @@
     </div>
     <nav class="nav" data-nav>
         <ul class="nav-list">
-            <li class="nav-item" data-nav-item="start">start</li>
-            <li class="nav-item" data-nav-item="about">o mnie</li>
-            <li class="nav-item" data-nav-item="skills">umiejętności</li>
-            <li class="nav-item" data-nav-item="portfolio">portfolio</li>
-            <li class="nav-item" data-nav-item="contact">kontakt</li>
+            <li class="nav-item nav-language-en" data-nav-language="pl">
+                <img src="./image/poland.png" alt="ikonka flagi">polski
+            </li>
+            <li class="nav-item nav-language-en" data-nav-theme="light">
+                <img src="./image/moon.png" alt="ikonka zmiany motywu">change theme
+            </li>
+            <li class="nav-item disabled" data-nav-item="start" data-language="pl">start</li>
+            <li class="nav-item" data-nav-item="start" data-language="en">home</li>
+            <li class="nav-item disabled" data-nav-item="about" data-language="pl">o mnie</li>
+            <li class="nav-item" data-nav-item="about" data-language="en">about me</li>
+            <li class="nav-item disabled" data-nav-item="skills" data-language="pl">umiejętności</li>
+            <li class="nav-item" data-nav-item="skills" data-language="en">skills</li>
+            <li class="nav-item disabled" data-nav-item="portfolio" data-language="pl">portfolio</li>
+            <li class="nav-item" data-nav-item="portfolio" data-language="en">portfolio</li>
+            <li class="nav-item disabled" data-nav-item="contact" data-language="pl">kontakt</li>
+            <li class="nav-item" data-nav-item="contact" data-language="en">contact</li>
         </ul>
+        <button class="btn-league">
+            <img src="./image/poland.png" alt="ikonka flagi" data-flag-img="pl">
+            <img src="./image/moon.png" alt="ikonka zmiany motywu" data-theme-img="light">
+        </button>
     </nav>
 
     <section class="start" id="start">
@@ -56,24 +70,37 @@
             </div>
             <div class="info-circle"><img src="./image/foto.jpg" alt="zdjęcie profilowe"></div>
         </div>
-        <p class="start-info">Bardzo lubię podejmować nowe wyzwania i zawsze dążę do wybranego celu, bez względu na to,
-            jak trudna jest droga nie poddaję się!</p>
+        <p class="start-info disabled" data-language="pl">Bardzo lubię tworzyć i kreować,</br> a programowanie daje tak
+            wiele mozliwości</br><b>The sky is no limit!</b></p>
+        <p class="start-info" data-language="en">I really like creating and programming </br> gives me so many
+            opportunities</br><b>The sky is no limit!</b></p>
         <div class="container-items">
-            <h2 class="container-title">Cześć!</h2>
-            <p class="container-description">Nazywam się Rafał Matraś. Około 2 lata temu postanowiłem zostać
-                programistą. Pomysł nie wziął się znikąd. Kiedyś znajomy poprosił mnie o zrobienie mu strony
-                internetowej, bo jako informatyk to pewnie też to potrafię. Podjąłem wyzwanie i zrobiłem mu prostą
-                stronę internrtową. Spodobało mi się pisanie kodu, ale wtedy nie mogłem wziąć się za to porządnie.
-                I tak 2 lata temu miałem już możliwość skupić się na nauce programowania. Początkowo uczyłem się
-                Front-Endu z YouTube'a i kursów na Udemy. Potem chciałem poznać Back-End. I tak rok temu znalazłem
-                perełkę, czyli kurs MegaK który trwał 1 rok i przekazał dużo konkretnych informacji. Pod koniec kursu
-                osoby, które zakwalifikowały się do
-                ostatniego etapu miały w grupach 6-8 osobowych zrobić projekt, który wspólnie metodyką scrum
-                ukończyliśmy ( demo i kod w zakładce portfolio ). Aktualnie szukam pracy jako Junior Full-Stak
-                Developer,
-                ale
-                mogę również zacząć jako Junior Back-End Developer albo Junior Front-End Developer.
-
+            <h2 class="container-title disabled" data-language="pl">Cześć!</h2>
+            <h2 class="container-title" data-language="en">Hello!</h2>
+            <p class="container-description disabled" data-language="pl">Nazywam się Rafał Matraś. Około 3 lata temu
+                postanowiłem zostać programistą. Pomysł nie wziął się znikąd. Kiedyś znajomy poprosił mnie o zrobienie
+                mu strony internetowej, bo jako informatyk to pewnie też to potrafię. Podjąłem wyzwanie i zrobiłem mu
+                prostą stronę internrtową. Spodobało mi się pisanie kodu, ale wtedy nie mogłem poświęcić się temu w
+                pełni zawodowo. 3 lata temu miałem już możliwość skupić się na nauce programowania. Początkowo uczyłem
+                się Front-Endu z YouTube'a i kursów na Udemy. Potem chciałem poznać Back-End. I tak znalazłem perełkę,
+                czyli kurs MegaK który trwał 1 rok i przekazał dużo konkretnych informacji. Pod koniec kursu osoby,
+                które zakwalifikowały się do ostatniego etapu miały w grupach 6-8 osobowych zrobić projekt, który
+                wspólnie metodyką scrum ukończyliśmy ( demo i kod w zakładce portfolio ). Aktualnie szukam pracy jako
+                Junior Full-Stack Developer, ale mogę również zacząć jako Junior Front-End Developer.
+            </p>
+            <p class="container-description" data-language="en">I am Rafał Matraś. 3 years ago I decided to
+                become a
+                programmer. The idea didn't come out of nowhere. Once a friend asked me to make a website for him
+                because as a computer scientist, I could probably do it too. I took the challenge and made it
+                easily. I enjoyed writing the code but at the time I couldn't do it proffesionally.
+                3 years ago I got the opportunity to focus on learning programming. At first I studied
+                Front-End from YouTube and Udemy courses. Then I wanted to learn Back-End. Then I found
+                the MegaK course, which lasted 1 year and provided a lot of specific information. At the end
+                of the course,the people who qualified for the last stage were asked to create a project in groups of
+                6-8 people,
+                which we completed together using the scrum methodology (demo and code in the portfolio tab). I am
+                currently looking for a job as a Junior Full-Stack Developer, but I can also start as Junior Front-End
+                Developer.
             </p>
         </div>
     </section>
@@ -81,21 +108,30 @@
     <section class="about" id="about">
         <div class="row-a">
             <div class="info info-first">
-                <h2 class="info-title">O mnie</h2>
+                <h2 class="info-title disabled" data-language="pl">O mnie</h2>
+                <h2 class="info-title" data-language="en">About me</h2>
                 <div class="info-circle-back"></div>
                 <div class="info-circle"><i class="fa fa-flag"></i></div>
             </div>
             <div class="container-items info-start">
                 <h2 class="container-title">start</h2>
-                <p class="container-description">Początki mojej przygody z kodem sięgają studiów. Początkowo był to
-                    Turbo Pascal który, nie jest już rozwijany. Potem uczyliśmy się C++ w którym robiliśmy pierwsze
-                    projekty typu podstawowy kalkulator. Niestety dalej nie poszedłem tą ścieżką, bo wybrałem Hardware i
-                    tak zostałem informatykiem.
+                <p class="container-description disabled" data-language="pl">Początki mojej przygody z kodem sięgają
+                    studiów. Początkowo był to Turbo Pascal który, nie jest już rozwijany. Potem uczyliśmy się C++ w
+                    którym robiliśmy pierwsze projekty typu podstawowy kalkulator. Niestety dalej nie poszedłem tą
+                    ścieżką, bo wybrałem Hardware i tak zostałem informatykiem.
+                </p>
+                <p class="container-description " data-language="en">The beginning of my adventure with the code dates
+                    back
+                    to my studies. Initially it was Turbo Pascal which is no longer used. Then we learned C++ in
+                    which we did the first basic calculator projects. Unfortunately, I did not follow this path further,
+                    because I chose Hardware i so I became a computer scientist.
                 </p>
             </div>
             <div class="container-items info-since">
-                <h2 class="container-title">nauka</h2>
-                <p class="container-description">Na szczęście na naukę nigdy nie jest za późno, także od końca 2020 roku
+                <h2 class="container-title disabled" data-language="pl">nauka</h2>
+                <h2 class="container-title" data-language="en">learning</h2>
+                <p class="container-description disabled" data-language="pl">Na szczęście na naukę nigdy nie jest za
+                    późno, także od końca 2020 roku
                     systematycznie poszerzam swoje umiejętności.
                     Ukończyłem intensywny roczny kurs MegaK gdzie poznałem takie technologie jak NodeJs express
                     TypeScript, Bazy danych realcyjne sql i nierelacyjne mongoDB, tworzenie Rest API, z Front-Endu React
@@ -104,15 +140,30 @@
                     projekty CSS i JavaScript, Programowanie obiektowe w JavaScript oraz inne. Cały czas ćwiczę,
                     realizując proste projekty, dzięki którym mogę robić to, co daje mi radość, wzbudza ciekawość i
                     motywuje do działania.</p>
+                <p class="container-description" data-language="en">Fortunately, it is never too late to learn, so
+                    since the end of 2020
+                    I have been expending my skills systematically.
+                    I completed an intensive one-year MegaK course where I learned about technologies such as NodeJs
+                    express TypeScript, real sql and non-relational mongoDB databases, Rest API development, with React
+                    Front-End
+                    and TypeScrypt and how to push it all into the githab repository and into production. I finished
+                    many other courses on the Udemy platform, e.g. Programming in JavaScript, React from scratch,
+                    Advanced
+                    CSS and JavaScript projects, Object-oriented programming in JavaScript and others. I practise all
+                    the time
+                    carrying out simple projects thanks to which I can do what gives me joy, arouses curiosity and
+                    motivates me to carry on.
+
+                </p>
             </div>
         </div>
         <div class="row-b">
             <div class="container-items info-features">
-                <h2 class="container-title">cechy</h2>
-                <ul class="container-description">
+                <h2 class="container-title disabled" data-language="pl">cechy</h2>
+                <h2 class="container-title" data-language="en">personality traits</h2>
+                <ul class="container-description disabled" data-language="pl">
                     <li>
-                        <p>Cechuje mnie wytrwałość, co dobrze komponuje się z programowaniem – nie poddaję się,
-                            choćby konsola była cała czerwona i nie miała końca.</p>
+                        <p>Cechuje mnie wytrwałość, co dobrze komponuje się z programowaniem</p>
                     </li>
                     <li>
                         <p>Cenię zasady "KISS" oraz "DRY"</p>
@@ -121,7 +172,7 @@
                         <p>Do działania napędza mnie rozwiązany problem, a do nauki ciekawość</p>
                     </li>
                     <li>
-                        <p>Zdanie: "Nie ma rzeczy niemożliwych", stało się moim motto.</p>
+                        <p>Zdanie: "Nie ma rzeczy niemożliwych", stało się moim motto</p>
                     </li>
                     <li>
                         <p>Jestem komunikatywny i bardzo lubię pracować w zespole</p>
@@ -133,14 +184,39 @@
                         <p>Jestem otwarty na wskazówki i szybko wdrażam je w swoje projekty</p>
                     </li>
                 </ul>
+                <ul class="container-description" data-language="en">
+                    <li>
+                        <p>I am characterized by perseverance, which goes well with programming</p>
+                    </li>
+                    <li>
+                        <p>I value the principles of "KISS" and "DRY"</p>
+                    </li>
+                    <li>
+                        <p>A solved problem motivates me to act, and curiosity drives me to learn</p>
+                    </li>
+                    <li>
+                        <p>The sentence: "Nothing is impossible" became my motto.</p>
+                    </li>
+                    <li>
+                        <p>I am communicative and I like working in a team</p>
+                    </li>
+                    <li>
+                        <p>I have high self-discipline and I have no problems organizing my individual work</p>
+                    </li>
+                    <li>
+                        <p>I am open to tips and quickly implement them in my projects</p>
+                    </li>
+                </ul>
             </div>
             <div class="container-items info-now">
-                <h2 class="container-title">aktualnie</h2>
-                <p class="container-description">Nadszedł czas, aby zdobyć doświadczenie i współtworzyć prawdziwe
-                    projekty.
-                    Aktualnie szukam pracy jako Junior Full-Stack Developer, ale mogę również zacząć jako Junior
-                    Back-End
-                    Developer lub Junior Front-End Developer.</p>
+                <h2 class="container-title disabled" data-language="pl">aktualnie</h2>
+                <h2 class="container-title" data-language="en">currently</h2>
+                <p class="container-description disabled" data-language="pl">Nadszedł czas, aby zdobyć doświadczenie i
+                    współtworzyć prawdziwe projekty. Aktualnie szukam pracy jako Junior Full-Stack Developer, ale mogę
+                    również zacząć jako Junior Front-End Developer.</p>
+                <p class="container-description" data-language="en">It's time to gain experience and co-create the real
+                    thing projects. I am currently looking for a job as a Junior Full-Stack Developer, but I can also
+                    start as a Junior Front-End Developer.</p>
             </div>
             <div class="info info-second">
                 <div class="info-circle-back"></div>
@@ -153,7 +229,8 @@
     <section class="skills" id="skills">
         <div class="ornament-circles first"></div>
         <div class="info">
-            <h2 class="info-title">Umiejętności</h2>
+            <h2 class="info-title disabled" data-language="pl">Umiejętności</h2>
+            <h2 class="info-title" data-language="en">Skills</h2>
             <div class="info-circle-back"></div>
             <div class="info-circle"><i class="far fa-lightbulb"></i></div>
         </div>
@@ -196,6 +273,10 @@
                     <p class="skill-text">Node.js</p>
                 </div>
                 <div class="skill">
+                    <img class="skill-img" src="./image/nest.svg" alt="logo nest">
+                    <p class="skill-text">Nest.js</p>
+                </div>
+                <div class="skill">
                     <img class="skill-img" src="./image/Expressjs.png" alt="logo express">
                     <p class="skill-text">Express</p>
                 </div>
@@ -214,7 +295,8 @@
             </div>
         </div>
         <div class="container-items">
-            <h2 class="container-title">narzędzia i inne</h2>
+            <h2 class="container-title disabled" data-language="pl">narzędzia i inne</h2>
+            <h2 class="container-title" data-language="en">tools and more</h2>
             <div class="container-description">
                 <div class="skill">
                     <img class="skill-img" src="./image/Git.png" alt="logo git">
@@ -233,17 +315,22 @@
                     <p class="skill-text">WebStorm</p>
                 </div>
                 <div class="skill">
+                    <img class="skill-img" src="./image/vsc.svg" alt="logo webstorm">
+                    <p class="skill-text">Visual Studio Code</p>
+                </div>
+                <div class="skill">
                     <img class="skill-img" src="./image/insomnia.svg" alt="logo insomnia">
                     <p class="skill-text">insomnia</p>
                 </div>
             </div>
         </div>
         <div class="container-items">
-            <h2 class="container-title">Aktualnie uczę się</h2>
+            <h2 class="container-title disabled" data-language="pl">Aktualnie uczę się</h2>
+            <h2 class="container-title" data-language="en">I am currently learning</h2>
             <div class="container-description">
                 <div class="skill">
-                    <img class="skill-img" src="./image/nest.svg" alt="logo nest">
-                    <p class="skill-text">Nest.js</p>
+                    <img class="skill-img" src="image/nextjsw.svg" alt="logo next.js" data-next-logo>
+                    <p class="skill-text">Next.js</p>
                 </div>
             </div>
         </div>
@@ -258,46 +345,105 @@
         </div>
         <div class="ornament-circles second"></div>
         <div class="container-items">
-            <h2 class="container-title">wybrane projekty</h2>
+            <h2 class="container-title disabled" data-language="pl">wybrane projekty</h2>
+            <h2 class="container-title" data-language="en">selected projects</h2>
             <div class="container-description">
                 <div class="box-project">
-                    <h3>HeadHunter</h3>
+                    <h3>Portfolio</h3>
                     <img src="./image/portfolio.png" alt="image portfolio">
                     <div class="box-btn">
-                        <a href="https://portfolio.rafalmatras.networkmanager.pl/" target="_blank">demo</a>
-                        <a href="https://github.com/Rafal-Matras/portfolio" target="_blank">kod front</a>
+                        <a href="https://rafalmatras.com" target="_blank">demo</a>
+                        <a href="https://github.com/Rafal-Matras/portfolio" target="_blank" class="disabled"
+                           data-language="pl">kod front</a>
+                        <a href="https://github.com/Rafal-Matras/portfolio" target="_blank" data-language="en">front
+                            code</a>
                     </div>
-                    <p>Prosta rensponsywna strona portfolio.
+                    <p class="disabled" data-language="pl">Prosta rensponsywna strona portfolio.
+                        <br>
+                        <span>Tech stack: HTML | Css | JavaScript</span>
+                    </p>
+                    <p data-language="en">A simple responsive portfolio website.
                         <br>
                         <span>Tech stack: HTML | Css | JavaScript</span>
                     </p>
                 </div>
                 <div class="box-project">
-                    <h3>Komis Samochodowy</h3>
+                    <h3 class="disabled" data-language="pl">Sklep z Herbatami</h3>
+                    <h3 data-language="en">Tea shop</h3>
+                    <img src="./image/sklep.png" alt="image sklep">
+                    <div class="box-btn">
+                        <a href="https://sklep.rafalmatras.com" target="_blank">demo</a>
+                        <a href="https://github.com/Rafal-Matras/tea-shop-fe" target="_blank" class="disabled"
+                           data-language="pl">kod front</a>
+                        <a href="https://github.com/Rafal-Matras/tea-shop-fe" target="_blank" data-language="en">front
+                            code</a>
+                        <a href="https://github.com/Rafal-Matras/tea-shop-be" target="_blank" class="disabled"
+                           data-language="pl">kod back</a>
+                        <a href="https://github.com/Rafal-Matras/tea-shop-be" target="_blank" data-language="en">back
+                            code</a>
+                    </div>
+                    <p class="disabled" data-language="pl">Strona sklepu internetowego.
+                        <br>
+                        <span>Tech stack: React |React Router | TypeScript | NestJS | SQL </span>
+                    </p>
+                    <p data-language="en">Online store website.
+                        <br>
+                        <span>Tech stack: React |React Router | TypeScript | NestJS | SQL </span>
+                    </p>
+                </div>
+                <div class="box-project">
+                    <h3 class="disabled" data-language="pl">Komis Samochodowy</h3>
+                    <h3 data-language="en">Used car dealer</h3>
                     <img src="./image/komis.png" alt="image komis">
                     <div class="box-btn">
-                        <a href="https://www.komis.rafalmatras.networkmanager.pl/" target="_blank">demo</a>
-                        <a href="https://github.com/Rafal-Matras/komis-front" target="_blank">kod front</a>
-                        <a href="https://github.com/Rafal-Matras/komis-back" target="_blank">kod back</a>
+                        <a href="https://komis.rafalmatras.com" target="_blank">demo</a>
+                        <a href="https://github.com/Rafal-Matras/komis-front" target="_blank" class="disabled"
+                           data-language="pl">kod front</a>
+                        <a href="https://github.com/Rafal-Matras/komis-front" target="_blank" data-language="en">front
+                            code</a>
+                        <a href="https://github.com/Rafal-Matras/komis-back" target="_blank" class="disabled"
+                           data-language="pl">kod back</a>
+                        <a href="https://github.com/Rafal-Matras/komis-back" target="_blank" data-language="en">back
+                            code</a>
                     </div>
-                    <p>Aplikacja dla sieci komisów samochodowych.
+                    <p class="disabled" data-language="pl">Aplikacja dla sieci komisów samochodowych.
                         <br>
                         W demo przeczytać info
                         <br>
-                        <span>Tech stack: React | TypeScript | Express | Sql .</span>
+                        <span>Tech stack: React |React Router | TypeScript | Express | SQL .</span>
+                    </p>
+                    <p data-language="en">Application for a network of car dealerships.
+                        <br>
+                        Read the info in the demo
+                        <br>
+                        <span>Tech stack: React |React Router | TypeScript | Express | SQL .</span>
                     </p>
                 </div>
                 <div class="box-project">
                     <h3>HeadHunter</h3>
                     <img src="./image/headHunter.png" alt="image headhunter">
                     <div class="box-btn">
-                        <a href="https://admap.networkmanager.pl/" target="_blank">demo</a>
-                        <a href="https://github.com/ezterr/head-hunter-fe" target="_blank">kod front</a>
+                        <a href="https://github.com/Jakub-Leszczewski/head-hunter-be" target="_blank" class="disabled"
+                           data-language="pl">kod back</a>
+                        <a href="https://github.com/Jakub-Leszczewski/head-hunter-be" target="_blank"
+                           data-language="en">back code</a>
+                        <a href="https://github.com/ezterr/head-hunter-fe" target="_blank" class="disabled"
+                           data-language="pl">kod front</a>
+                        <a href="https://github.com/ezterr/head-hunter-fe" target="_blank" data-language="en">front
+                            code</a>
                     </div>
-                    <p>Projekt został stworzony wspólnie ( scrum ) na potrzeby kursu MegaK. Ja
+                    <p class="disabled" data-language="pl">Projekt został stworzony wspólnie ( scrum ) na potrzeby kursu
+                        MegaK. Ja
                         wraz z dwoma uczestnikami byliśmy odpowiedzialni za front.
                         <br>
                         hr login: dziendobry@onet.pl | hasło: Siema123
+                        <br>
+                        <span>Tech stack: React | React Router | TypeScript | Axios | Scss</span>
+                    </p>
+                    <p data-language="en">The project was created jointly ( scrum ) for the needs of the MegaK course. I
+                        together with two participants we were responsible for the front.
+                        <br>
+                        hr login: dziendobry@onet.pl | password: Siema123
                         <br>
                         <span>Tech stack: React | React Router | TypeScript | Axios | Scss</span>
                     </p>
@@ -309,16 +455,24 @@
     <section class="contact" id="contact">
         <div class="ornament-circles first"></div>
         <div class="info">
-            <h2 class="info-title">Kontakt</h2>
+            <h2 class="info-title disabled" data-language="pl">Kontakt</h2>
+            <h2 class="info-title" data-language="en">Contact</h2>
             <div class="info-circle-back"></div>
             <div class="info-circle"><i class="fas fa-phone"></i></div>
         </div>
         <div class="ornament-circles second"></div>
         <div class="container-items">
-            <h2 class="container-title">kontakt</h2>
+            <h2 class="container-title disabled" data-language="pl">kontakt</h2>
+            <h2 class="container-title" data-language="en">contact</h2>
             <div class="container-description">
-                <div class="icons">
-                    <a href="./files/cv.pdf" download="newfilename"><i class="fas fa-file-pdf"></i></a>
+                <div class="icons disabled" data-language="pl">
+                    <a href="files/cv_pl.pdf" download="Rafał_Matraś_CV_PL" target="_blank"><i
+                            class="fas fa-file-pdf"></i></a>
+                    <p>Curriculum Vitae</p>
+                </div>
+                <div class="icons" data-language="en">
+                    <a href="files/cv_en.pdf" download="Rafał_Matraś_CV_EN" target="_blank"><i
+                            class="fas fa-file-pdf"></i></a>
                     <p>Curriculum Vitae</p>
                 </div>
                 <div class="icons">
@@ -326,8 +480,8 @@
                     <p>rafalmatras@gmail.com</p>
                 </div>
                 <div class="icons">
-                    <a href="https://linkedin.com/in/rafałmatraś/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <p>linkedin.com/in/rafałmatraś/</p>
+                    <a href="https://www.linkedin.com/in/rafalmatras/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <p>linkedin.com/in/rafalmatras/</p>
                 </div>
                 <div class="icons">
                     <a href="https://github.com/Rafal-Matras" target="_blank"><i class="fab fa-github"></i></a>
@@ -346,7 +500,7 @@
                 </a>
             </li>
             <li class="footer-icons">
-                <a href="https://linkedin.com/in/rafałmatraś/" target="_blank">
+                <a href="https://www.linkedin.com/in/rafalmatras/" target="_blank">
                     <i class=" footer-link fab fa-linkedin"></i>
                 </a>
             </li>
